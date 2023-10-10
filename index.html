@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex55 Project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/pokedex_list.js" defer type="module"></script>
+    <script src="js/search.js" defer type="module" ></script>
+    <script src="js/script.js" defer type="module" ></script>
+
+    <script src="js/colors.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- ----------------------------------------- Pokedex List ----------------------------------------- -->
+
+    <div class="pokedex_container" id="search-bar-container">
+        <div class="search_bar">
+            <input type="text" placeholder="Search your Pokemon" class="search_input" id="search-input">
+            <button id="start-search-button"> <i class="fas fa-search"></i></button>
+        </div>
+        <div class="pokedex" id="pokedex-list-render-container"></div>
+    </div>
+
+
+    <div class="responsive"></div>
+    <button class="responsive_btn"><img src="assets/close-icon.png" alt=""></button>
+ 
+    <div class="pokeinfo_container">
+        <img src="assets/no-pokemon-selected-image (1).png" alt="" class="pika" onkeydown="search()">
+        <h5>Select a Pokemon <br> to display here.
+        </h5></div>
+    </div>
+
+    <img src="assets/pokeball-icon.png" alt="" class="loading">
+</body>
+</html>
